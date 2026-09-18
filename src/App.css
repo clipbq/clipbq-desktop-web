@@ -15,20 +15,24 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .card {
   background: var(--card);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 400px;
+  box-sizing: border-box;
 }
 
 h2 {
   margin-top: 0;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .form-group {
@@ -50,6 +54,7 @@ input {
   background: #0f172a;
   color: var(--text);
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 input:disabled {
@@ -67,6 +72,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 button:hover:not(:disabled) {
@@ -121,4 +127,11 @@ button:disabled {
   font-size: 0.875rem;
   margin-top: 0.5rem;
   text-align: center;
+}
+
+/* Larger screens (tablets and desktops) */
+@media (min-width: 640px) {
+  .card {
+    padding: 2rem;
+  }
 }
